@@ -53,10 +53,10 @@ gunicorn jest sewerem http obsługującym naszą aplikację
 W pliku Procfile
 
 ```Procfile
-web: gunicorn main.app
+web: gunicorn main:app
 ```
 umieszczamy jedną linijkę 
-web oznacza, że to będzie nasz kontener webowy, który uruchamia gunicorna z `main.app`
+web oznacza, że to będzie nasz kontener webowy, który uruchamia gunicorna z `main:app`
 
 jest to wskazanie, że aplikacja będzie uruchamiać się z pliku `main.py`, będzie działać przez zmienna `app`, która jest naszą aplikacją flaskową
 
