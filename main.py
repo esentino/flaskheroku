@@ -6,7 +6,7 @@ app = Flask(__name__)
 def calc():
     html = """
     <h2> Kalkulator: </h2>
-    <form action="/calc" method="POST">
+    <form action="/" method="POST">
         <input type="text" name="liczba"/>
         <input type="text" name="liczba2"/>
         <select name="dzialanie">
