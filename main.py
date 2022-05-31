@@ -2,7 +2,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route('/calc', methods=["GET", "POST"])
+@app.route('/', methods=["GET", "POST"])
 def calc():
     html = """
     <h2> Kalkulator: </h2>
